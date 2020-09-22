@@ -9,12 +9,66 @@ main{
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Left and right column */
+
+/* Middle column */
+.column.middle {
+  width: 70%;
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
 }
 
 .header {
   background-color: #f1f1f1;
-  padding: 20px;
+  padding: 30px;
   text-align: center;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 /* Style the footer */
