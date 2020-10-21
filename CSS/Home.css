@@ -5,19 +5,31 @@
   }
   
   .flex-container > div {
-    background-color: #f1f1f1;
+    background-color: #f6f6f8;
     margin: 20px;
     width: 100%;
     padding: 20px;
   }
 
   h4{
-    color: #0384fc;
+    color: #c60021;
   }
 
   img {
     width: 100%;
     height: 100%;
+  }
+
+  a {
+    color: #c60021;
+  }
+
+  b {
+    color: #c60021; 
+  }
+
+  .header {
+    background-color: #E3E3E3;
   }
 
   /* Responsive layout - makes a one column layout instead of a two-column layout */

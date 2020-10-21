@@ -5,12 +5,20 @@
   }
   
   .flex-container > div {
-    background-color: #f1f1f1;
+    background-color: #f6f6f8;
     margin: 20px;
     width: 100%;
     padding: 20px;
     height: 50%;
   }
+
+  .header {
+    background-color: #E3E3E3;
+  }
+
+h2 {
+  color: #c60021;
+}
 
   /* Responsive layout - makes a one column layout instead of a two-column layout */
 @media (max-width: 800px) {
