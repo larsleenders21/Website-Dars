@@ -20,6 +20,10 @@ h2 {
   color: #c60021;
 }
 
+b {
+  color: #c60021 ;
+}
+
   /* Responsive layout - makes a one column layout instead of a two-column layout */
 @media (max-width: 800px) {
   .flex-container {
