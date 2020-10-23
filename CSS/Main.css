@@ -144,68 +144,68 @@ nav a:hover {
   color: #fff;
 }
 
-/* Formulier */
-.gegevens{
- font-size: large;
-} 
-
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  resize: vertical;
+/*********************
+        Form
+*********************/
+select, option, input, label, button{
+  padding: 0.2rem 1rem;
+  font-size: 1.2rem;
+  color: inherit;
 }
-
-label {
-  padding: 12px 12px 12px 0;
-  display: inline-block;
+.form-box{
+    padding: 0.5rem 0;
+    display: flex;
+    flex-direction: column;
 }
-
-input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  float: right;
+.form-box label{
+    display: none;
 }
-
-input[type=submit]:hover {
-  background-color: #45a049;
+.form-box input,
+.form-box select,
+.form-box textarea{
+    flex-basis: 80%;
 }
-
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
+.form{
+  background-color: lightslategray;
+  border-radius: 20px;
   padding: 20px;
+
+}
+.form-container{
+  text-align: center;
+
 }
 
-.col-25 {
-  float: left;
-  width: 25%;
-  margin-top: 6px;
+/*******************************
+        Media Queries
+*******************************/
+@media all and (min-width: 500px){
+    .form-box label{
+        display: block;
+    }
 }
 
-.col-75 {
-  float: left;
-  width: 75%;
-  margin-top: 6px;
+@media all and (min-width: 600px){
+    .form-box{
+        flex-direction: row;
+    }
+    .form-box label{
+        flex-basis: 9rem;
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+    .form-box input,
+    .form-box select,
+    .form-box textarea{
+        flex-basis: 0;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+    .form-box button{
+        margin-left: 9rem;
+    }
 }
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 
-/* Responsive layout */
-@media screen and (max-width: 600px) {
-  .col-25, .col-75, input[type=submit] {
-    width: 100%;
-    margin-top: 0;
-  }
-}
 
 
