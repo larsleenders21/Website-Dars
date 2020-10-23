@@ -24,6 +24,11 @@ b {
   color: #c60021 ;
 }
 
+img {
+  width: 100%;
+  height: 100%;
+}
+
   /* Responsive layout - makes a one column layout instead of a two-column layout */
 @media (max-width: 800px) {
   .flex-container {
