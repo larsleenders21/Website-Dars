@@ -28,10 +28,6 @@
     color: #c60021 ;
   }
 
-  .header {
-    background-color: #E3E3E3;
-  }
-
   /* Responsive layout - makes a one column layout instead of a two-column layout */
 @media (max-width: 800px) {
   .flex-container {

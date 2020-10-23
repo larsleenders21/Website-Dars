@@ -10,6 +10,7 @@ main{
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
+  padding-bottom: 60px;
 
   background: radial-gradient(1.5em 6.28571em at 1.95em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 0 0, radial-gradient(1.5em 6.28571em at -0.45em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 1.5em 5.5em, radial-gradient(2.3em 4.57143em at 2.99em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.3) 55%, rgba(255, 255, 255, 0) 55%) 0 0, radial-gradient(2.3em 4.57143em at -0.69em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.3) 55%, rgba(255, 255, 255, 0) 55%) 2.3em 4em, radial-gradient(3.5em 6.28571em at 4.55em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 0 0, radial-gradient(3.5em 6.28571em at -1.05em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 3.5em 5.5em, radial-gradient(#dbdada, #ccc7c7);
   background-color: rgb(159, 158, 207);
@@ -41,11 +42,11 @@ div.desc {
 }
 
 .header {
-  background-color: #f1f1f1;
+  background-color: #E3E3E3;
   padding: 30px;
   text-align: center;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 0px;
   margin-bottom: 20px;
 }
 
@@ -59,40 +60,18 @@ div.desc {
     color: white;
     text-align: center;
  }
- ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  li a:hover {
-    background-color: #111;
-  }
 
+  
 
-
-  /* navbar */
+/* navbar */
 
 nav {
-  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  margin: 0px;
+  padding: 0px;
+  position: relative !important;
 }
 
 nav ul {
@@ -144,6 +123,27 @@ nav a:hover {
   color: #fff;
 }
 
+/* Responsive Nav Bar */
+@media all and (max-width: 900px) {
+  nav ul {
+      flex-direction: column;
+  }
+  nav ul li {
+      text-align: center;
+  }
+}
+
+/* Formulier */
+.gegevens{
+ font-size: large;
+} 
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
 /*********************
         Form
 *********************/
