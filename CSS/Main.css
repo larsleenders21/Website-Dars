@@ -45,7 +45,7 @@ div.desc {
   padding: 30px;
   text-align: center;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 0px;
   margin-bottom: 20px;
 }
 
@@ -59,40 +59,18 @@ div.desc {
     color: white;
     text-align: center;
  }
- ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  li a:hover {
-    background-color: #111;
-  }
 
-
+  
 
   /* navbar */
 
 nav {
-  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  margin: 0px;
+  padding: 0px;
+  position: relative !important;
 }
 
 nav ul {
@@ -142,6 +120,16 @@ nav li li ul{
 nav a:hover {
   background-color: #c60021;
   color: #fff;
+}
+
+/* Responsive Nav Bar */
+@media all and (max-width: 600px) {
+  nav ul {
+      flex-direction: column;
+  }
+  nav ul li {
+      text-align: center;
+  }
 }
 
 /* Formulier */
