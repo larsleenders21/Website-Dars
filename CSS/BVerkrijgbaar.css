@@ -28,6 +28,7 @@
     width: 100%;
     cursor: pointer;
     background: slategrey;
+    pointer-events: none;
   }
   
   .btn:hover {
