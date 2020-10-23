@@ -10,6 +10,7 @@ main{
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
+  padding-bottom: 60px;
 
   background: radial-gradient(1.5em 6.28571em at 1.95em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 0 0, radial-gradient(1.5em 6.28571em at -0.45em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 1.5em 5.5em, radial-gradient(2.3em 4.57143em at 2.99em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.3) 55%, rgba(255, 255, 255, 0) 55%) 0 0, radial-gradient(2.3em 4.57143em at -0.69em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.3) 55%, rgba(255, 255, 255, 0) 55%) 2.3em 4em, radial-gradient(3.5em 6.28571em at 4.55em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 0 0, radial-gradient(3.5em 6.28571em at -1.05em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 3.5em 5.5em, radial-gradient(#dbdada, #ccc7c7);
   background-color: rgb(159, 158, 207);
@@ -41,7 +42,7 @@ div.desc {
 }
 
 .header {
-  background-color: #f1f1f1;
+  background-color: #E3E3E3;
   padding: 30px;
   text-align: center;
   width: 100%;
@@ -62,7 +63,7 @@ div.desc {
 
   
 
-  /* navbar */
+/* navbar */
 
 nav {
   top: 0;
@@ -123,7 +124,7 @@ nav a:hover {
 }
 
 /* Responsive Nav Bar */
-@media all and (max-width: 600px) {
+@media all and (max-width: 900px) {
   nav ul {
       flex-direction: column;
   }
