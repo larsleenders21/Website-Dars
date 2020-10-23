@@ -19,32 +19,39 @@
         </nav>
     </header>
     <main>
-        <div class="flex-container">
+        <div class="flex-container form-container">
             <form class="form" name="my-form" action="#" method="get">
+                <h2>Contact formulier</h2>
+
                 <div class="form-box">
-                    <label for="username">Username</label>
-                    <input type="text" id="username" name="username" placeholder="Username">
+                    <label for="username">Naam:</label>
+                    <input type="text" id="username" name="username" placeholder="Naam">
                 </div>
                 <div class="form-box">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" placeholder="Email">
+                </div>
+
+                <div class="form-box">
+                    <label for="pass">Datum:</label>
+                    <input type="date" id="pass" name="pass" placeholder="Password">
                 </div>
                 <div class="form-box">
-                    <label for="pass">Password</label>
-                    <input type="password" id="pass" name="pass" placeholder="Password" required>
-                </div>
-                <div class="form-box">
-                    <label for="domain">Domain</label>
+                    <label for="domain">Locatie</label>
                     <select id="domain" name="domain">
-                        <option value="facebook">Facebook</option>
-                        <option value="github">Github</option>
-                        <option value="google">Google</option>
-                        <option value="instagram">Instagram</option>
-                        <option value="twitter">Twitter</option>
+                        <option value="facebook">Eindhoven</option>
+                        <option value="github">Amsterdam</option>
+                        <option value="google">Rotterdam</option>
+                        <option value="instagram">Zwolle</option>
+                        <option value="twitter">Utrecht</option>
                     </select>
                 </div>
                 <div class="form-box">
-                    <button id="btnSend">Send</button>
+                    <label for="pass">Bericht:</label>
+                    <textarea type="text" id="pass" name="pass" placeholder="Bericht" rows="4"></textarea>
+                </div>
+                <div class="form-box">
+                    <button class="btn">Verstuur</button>
                 </div>
             </form>
         </div>

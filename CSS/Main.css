@@ -152,6 +152,7 @@ select, option, input, label, button{
   padding: 0.2rem 1rem;
   font-size: 1.2rem;
   color: inherit;
+  height: 40px;
 }
 .form-box{
     padding: 0.5rem 0;
@@ -164,7 +165,7 @@ select, option, input, label, button{
 .form-box input,
 .form-box select,
 .form-box textarea{
-    flex-basis: 80%;
+    flex-basis: 100%;
 }
 .form{
   background-color: lightslategray;
@@ -173,7 +174,7 @@ select, option, input, label, button{
 
 }
 .form-container{
-  text-align: center;
+  text-align: left;
 
 }
 
