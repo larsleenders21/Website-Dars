@@ -168,10 +168,9 @@ select, option, input, label, button{
     flex-basis: 100%;
 }
 .form{
-  background-color: lightslategray;
+  background-color: rgba(44, 43, 43, 0.637);
   border-radius: 20px;
   padding: 20px;
-
 }
 .form-container{
   text-align: left;
