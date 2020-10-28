@@ -27,9 +27,15 @@
     color: #c60021 ;
   }
 
+  /* Hiermee wordt de hoofdas bepaald, waarmee de richting wordt bepaald waarin flexartikelen
+    in de flexcontainer worden geplaatst. Flexbox is (afgezien van optionele verpakking)
+    een ontwerpconcept in één richting. Beschouw flexitems als primair opgesteld in horizontale
+    rijen of verticale kolommen */
+
   /* Responsive layout - makes a one column layout instead of a two-column layout */
 @media (max-width: 1000px) {
   .flex-container {
+    /*zelfde principe als row maar dan van top naar bottom*/
     flex-direction: column;
   }
 }
